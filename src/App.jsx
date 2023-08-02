@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+import ApiFetcher from './ApiFetcher';
 import Clock from './Clock';
 import EqualizerBand from './EqualizerBand';
 
@@ -9,18 +11,6 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-     <h1>hello</h1>
-     <div className='band-container'>
-      <EqualizerBand />
-      <EqualizerBand />
-      <EqualizerBand />
-      <EqualizerBand />
-     </div>
-    </div>
-  )
-  }
-  /*return (
     <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -43,9 +33,27 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <hr/>
+      <div className="band-container">
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+        <EqualizerBand />
+      </div>
+      <ApiFetcher />
     </>
   )
+
 }
-*/
 
 export default App

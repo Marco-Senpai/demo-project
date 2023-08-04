@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Names from './Names';
 
 import ApiFetcher from './ApiFetcher';
 import Clock from './Clock';
@@ -51,6 +52,7 @@ function App() {
         <EqualizerBand />
       </div>
       <ApiFetcher />
+      <Names />
     </>
   )
 

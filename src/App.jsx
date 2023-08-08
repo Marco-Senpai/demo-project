@@ -2,15 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Names from './Names';
 
 import ApiFetcher from './ApiFetcher';
 import Clock from './Clock';
 import EqualizerBand from './EqualizerBand';
+import Names from './Names';
+import Calculator from './Calculator';
 
 function App() {
   const [count, setCount] = useState(0)
 
+/*
   return (
     <>
       <div>
@@ -55,6 +57,19 @@ function App() {
       <Names />
     </>
   )
+  */
+
+ // Temporary disable the other components, so we
+ // can focus on Names.
+ return (
+  <div>
+    <h1>List of names</h1>
+    <Names />
+    <h1>Calculator</h1>
+    <Calculator />
+  </div>
+ );
+
 
 }
 

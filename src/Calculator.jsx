@@ -29,7 +29,7 @@ function Calculator() {
 
         for (let i = 1; i < 10; i++) {
             digits.push(
-                <button onClick={() => updateCalc(i,toString())} key={i}>{i}</button>
+                <button onClick={() => updateCalc(i, toString())} key={i}>{i}</button>
             )
         }
 

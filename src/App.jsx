@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 import ApiFetcher from './ApiFetcher';
 import Clock from './Clock';
 import EqualizerBand from './EqualizerBand';
@@ -12,7 +13,7 @@ import Calculator from './Calculator';
 function App() {
   const [count, setCount] = useState(0)
 
-/*
+
   return (
     <>
       <div>
@@ -55,13 +56,14 @@ function App() {
       </div>
       <ApiFetcher />
       <Names />
+      <Calculator />
     </>
   )
-  */
+  
 
  // Temporary disable the other components, so we
  // can focus on Names.
- return (
+ /*return (
   <div>
     <h1>List of names</h1>
     <Names />
@@ -69,7 +71,7 @@ function App() {
     <Calculator />
   </div>
  );
-
+*/
 
 }
 

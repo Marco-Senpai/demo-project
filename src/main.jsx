@@ -3,43 +3,48 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-
 import {
-  createBrowserRouter, RouterProvider
+  createBrowserRouter,
+  RouterProvider
 } from 'react-router-dom';
 
 import Root from './routes/root.jsx';
-import Clock from './Clock.jsx'
+import ErrorPage from './routes/error-page.jsx';
+import Clock from './Clock.jsx';
+import Equalizer from './Equalizer.jsx';
 import ApiFetcher from './ApiFetcher.jsx';
-import EqualizerBand from './EqualizerBand.jsx';
+import Names from './Names.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/app",
-        element: <App />
+        path: "app",
+        element: <App />,
       },
       {
-        path: "/clock",
-        element: <Clock />
-      },
+        path: "clock",
+        element: <Clock />,
+      }, 
       {
-        path: "/fetcher",
+        path: "fetcher",
         element: <ApiFetcher />
       },
       {
-        path: "/names",
-        element: <Names />
+        path: "equalizer",
+        element: <Equalizer />
       },
       {
-        path: "equalizer",
-        element: <EqualizerBand />
+        path: "names",
+        element: <Names />
       }
+      
     ]
-  }]);
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

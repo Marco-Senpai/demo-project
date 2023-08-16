@@ -3,19 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
-import ApiFetcher from './ApiFetcher';
-import Clock from './Clock';
-import EqualizerBand from './EqualizerBand';
-import Names from './Names';
-import Calculator from './Calculator';
-
 function App() {
   const [count, setCount] = useState(0)
 
-
   return (
     <>
+      <p>Updated on 2023-08-15!!!</p>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -24,7 +17,6 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Clock />
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -37,42 +29,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <hr/>
-      <div className="band-container">
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-        <EqualizerBand />
-      </div>
-      <ApiFetcher />
-      <Names />
-      <Calculator />
     </>
-  )
-  
-
- // Temporary disable the other components, so we
- // can focus on Names.
- /*return (
-  <div>
-    <h1>List of names</h1>
-    <Names />
-    <h1>Calculator</h1>
-    <Calculator />
-  </div>
- );
-*/
-
+  );
 }
 
 export default App

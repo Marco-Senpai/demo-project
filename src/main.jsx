@@ -14,6 +14,7 @@ import Clock from './Clock.jsx';
 import Equalizer from './Equalizer.jsx';
 import ApiFetcher from './ApiFetcher.jsx';
 import Names from './Names.jsx';
+import Calculator from './Calculator.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "names",
         element: <Names />
+      },
+      {
+        path: "calculator",
+        element: <Calculator />
       }
       
     ]

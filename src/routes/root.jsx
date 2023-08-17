@@ -10,7 +10,8 @@ export default function Root() {
                 <Link to={`/clock`}>Clock</Link> &mdash;
                 <Link to={`/fetcher`}>API Fetcher</Link> &mdash;
                 <Link to={`/equalizer`}>Equalizer</Link> &mdash;
-                <Link to={`/names`}>Names</Link>
+                <Link to={`/names`}>Names</Link> &mdash;
+                <Link to={`/calculator`}>Calculator</Link>
             </p>
         </nav>
         <hr/>
